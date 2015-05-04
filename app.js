@@ -6,6 +6,7 @@ angular.module("runesApp").service("runeService", function(){
         "a": "&#x16A8 ",
         "r": "&#x16B1 ",
         "c": "&#x16B2 ",
+        "k": "&#x16B2 ",
         "g": "&#x16B7 ",
         "w": "&#x16B9 ",
         "h": "&#x16BA &#x16BB ",
