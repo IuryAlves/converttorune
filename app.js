@@ -26,7 +26,8 @@ angular.module("runesApp").service("runeService", function(){
     var translate = function(input){
         var output = "";
         for (var index_letter = 0, length = input.length; index_letter < length; index_letter++){
-            output += runes_table[input[index_letter]];
+            letter = input[index_letter].toLowerCase();
+            output += runes_table[letter];
         }
         return output;
 
