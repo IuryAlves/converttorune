@@ -27,7 +27,8 @@ angular.module("runesApp").service("runeService", function(){
         var output = "";
         for (var index_letter = 0, length = input.length; index_letter < length; index_letter++){
             letter = input[index_letter].toLowerCase();
-            output += runes_table[letter];
+            rune_char = runes_table[letter];
+            output += rune_char || " ";
         }
         return output;
 
