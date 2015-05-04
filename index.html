@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.2/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <link rel="stylesheet" href="https://cdn.muicss.com/mui-0.0.8/css/mui.min.css">
+    </head>
+    <body ng-app="runesApp">
+        <h1 style="margin-top:0px" class="mui-appbar mui-text-center">Convert To Rune</h1>
+        <div class="mui-container">
+        <div class="mui-form-group">
+            <input ng-model="input" ng-init="input='teste'" class="mui-form-control" ng-placeholder="input">
+        </div>
+        <div class="mui-panel">
+            <p ng-bind-html-unsafe="input | toRune"></p>
+        </div>
+        </div>
+    </body>
+</html>
